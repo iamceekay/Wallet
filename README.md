@@ -1,4 +1,4 @@
-# Wallet
+# Wallet 
 
 Create a User Wallet system where a user can come and register for a wallet. User will be able to make transactions using wallet Write APIs for
   
@@ -16,6 +16,12 @@ Charge - 0.2% of the Transaction Amount
 Commission - 0.05% of the Transaction Amount
 
 Use in memory database or RDBMS (like MySQL) as convenient.
+
+## Tech Stack
+-Java
+-Spring Boot
+-Jpa
+-Sql
 
 Registration:
 
