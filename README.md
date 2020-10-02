@@ -18,10 +18,10 @@ Commission - 0.05% of the Transaction Amount
 Use in memory database or RDBMS (like MySQL) as convenient.
 
 ## Tech Stack
--Java
--Spring Boot
--Jpa
--Sql
+- Java
+- Spring Boot
+- Jpa
+- Sql
 
 Registration:
 
