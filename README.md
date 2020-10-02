@@ -17,12 +17,13 @@ Commission - 0.05% of the Transaction Amount
 
 Use in memory database or RDBMS (like MySQL) as convenient.
 
-
-
 Registration:
 
 http://localhost:8080/registration
 
+**Sample Request Response**
+
+```
 {
     "firstName": "Ck",
     "lastName": "Khamari",
@@ -31,8 +32,11 @@ http://localhost:8080/registration
     "password": "abcde"
    
 }
+```
 
 Response:
+
+```
 {
     "Registration Info": [
         {
@@ -43,11 +47,13 @@ Response:
     ]
 }
 
+```
  
 
 Login:
 http://localhost:8080/login
 
+```
 {
    
      "phoneNumber": "9900065441",
@@ -55,8 +61,11 @@ http://localhost:8080/login
    
 }
 
+```
 
 Response:
+
+```
 {
     "User Info": [
         {
@@ -67,16 +76,21 @@ Response:
     ]
 }
 
+```
 
 With Invalid Password:
+
+```
 {
    
      "phoneNumber": "9900065441",
     "password": "abcdy"
    
 }
-
+```
 Response:
+
+```
 {
     "Registration Info": [
         {
@@ -87,16 +101,21 @@ Response:
     ]
 }
 
+```
+
 Without Registration:
 
+```
 {
    
      "phoneNumber": "9900065448",
     "password": "abcdy"
    
 }
-
+```
 Response:
+
+```
 {
     "Registration Info": [
         {
@@ -107,18 +126,22 @@ Response:
     ]
 }
 
-
+```
 Add Money:
 http://localhost:8080/addMoney
 
+```
 {
    
    "phoneNumber": "9900065441",
    "amount": 30
    
 }
+```
 
 Response:
+
+```
 {
     "Money Add": [
         {
@@ -129,10 +152,11 @@ Response:
         }
     ]
 }
-
+```
 TransferMoney:
 http://localhost:8080/transferMoney
 
+```
 {
    
      "phoneNumberFrom": "9900065441",
@@ -140,9 +164,10 @@ http://localhost:8080/transferMoney
     "phoneNumberTO": "9900065442"
    
 }
-
+```
 Response:
 
+```
 {
     "Transaction": [
         {
@@ -153,13 +178,14 @@ Response:
             "Transactionid": "a6126269-d15e-4958-8454-de16294d6553"
         }
     ]
-
+}
+```
 viewPassbook: GET
 
 http://localhost:8080/viewPassbook/9900065441
-
 Response:
 
+```
 
 {
     "Transaction": [
@@ -202,11 +228,12 @@ Response:
     ]
 }
 
-
+```
 Transaction Status: (Get)
 http://localhost:8080/transactionStatus/9a1b59d1-3df1-4844-9eb0-13e29ea516f6
 Response:
 
+```
 {
     "Transaction": [
         {
@@ -218,10 +245,12 @@ Response:
         }
     ]
 }
-
+```
 Reversal Transaction:
 http://localhost:8080/reversalTransaction/9a1b59d1-3df1-4844-9eb0-13e29ea516f6
 Response:
+
+```
 
 {
     "Transaction Info": [
@@ -232,5 +261,6 @@ Response:
     ]
 }
 
+```
 
 
