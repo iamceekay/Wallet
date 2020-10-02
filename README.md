@@ -134,6 +134,7 @@ Response:
 
 ```
 Add Money:
+
 http://localhost:8080/addMoney
 
 ```
@@ -160,6 +161,7 @@ Response:
 }
 ```
 TransferMoney:
+
 http://localhost:8080/transferMoney
 
 ```
@@ -189,6 +191,7 @@ Response:
 viewPassbook: GET
 
 http://localhost:8080/viewPassbook/9900065441
+
 Response:
 
 ```
@@ -236,7 +239,9 @@ Response:
 
 ```
 Transaction Status: (Get)
+
 http://localhost:8080/transactionStatus/9a1b59d1-3df1-4844-9eb0-13e29ea516f6
+
 Response:
 
 ```
@@ -253,7 +258,9 @@ Response:
 }
 ```
 Reversal Transaction:
+
 http://localhost:8080/reversalTransaction/9a1b59d1-3df1-4844-9eb0-13e29ea516f6
+
 Response:
 
 ```
